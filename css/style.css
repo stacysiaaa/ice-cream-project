@@ -131,9 +131,9 @@ body {
 
 .header_image_wrapper {
     position: relative;
-    max-width: 100%;
-    height: auto;
-    overflow: visible;
+  /*max-width: 100%;*/
+  /*height: auto;*/
+  /*overflow: visible;*/
 }
 
 .main_image {
@@ -141,14 +141,14 @@ body {
     max-width: 100%;
 }
 
-.overlay_image {
-    position: absolute;
-    bottom: -150px;
-    left: -200px;
-    pointer-events: none;
-    width: 851.858563227616px;
-    height: 548.1037262172892px;
-}
+/*.overlay_image {*/
+/*  position: absolute;*/
+/*  bottom: -130px;*/
+/*  left: -90px;*/
+/*  pointer-events: none;*/
+/*  width: 620px;*/
+/*  height: 500px;*/
+/*}*/
 
 /*CONTAINER*/
 
@@ -623,11 +623,11 @@ input[type="email"]:focus {
     position: relative;
 }
 
-.shadow {
-    position: absolute;
-    left: 1075px;
-    top: 475px;
-}
+/*.shadow {*/
+/*  position: absolute;*/
+/*  left: 1075px;*/
+/*  top: 475px;*/
+/*}*/
 
 .newsletter_form {
     display: flex;
@@ -829,9 +829,9 @@ input[type="email"]:focus {
         text-align: center;
     }
 
-    .shadow {
-        display: none;
-    }
+  /*.shadow {*/
+  /*  display: none;*/
+  /*}*/
 
     .header_nav {
         display: flex;
@@ -850,9 +850,9 @@ input[type="email"]:focus {
         height: auto;
     }
 
-    .overlay_image {
-        max-width: 600px;
-    }
+  /*.overlay_image {*/
+  /*  max-width: 600px;*/
+  /*}*/
 
     .text_order {
         width: 90%;
@@ -867,10 +867,10 @@ input[type="email"]:focus {
         margin-bottom: 15px;
     }
 
-    .overlay_image {
-        top: 100px;
-        left: -30px;
-    }
+  /*.overlay_image {*/
+  /*  top: 100px;*/
+  /*  left: -30px;*/
+  /*}*/
 
     .container_pink {
         width: 90%;
@@ -1048,16 +1048,16 @@ input[type="email"]:focus {
         width: 90%;
     }
 
-    .main_image,
-    .overlay_image {
-        max-width: 100%;
-        height: auto;
-    }
+  /*.main_image,*/
+  /*.overlay_image {*/
+  /*  max-width: 100%;*/
+  /*  height: auto;*/
+  /*}*/
 
-    .overlay_image {
-        top: 130px;
-        left: -40px;
-    }
+  /*.overlay_image {*/
+  /*  top: 130px;*/
+  /*  left: -40px;*/
+  /*}*/
 
     .container_pink {
         display: flex;
@@ -1223,4 +1223,47 @@ input[type="email"]:focus {
         width: 25px;
         height: 25px;
     }
+
+  .shadow {
+    display: none;
+  }
 }
+
+
+/*new styles*/
+.main_image {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.overlay_image {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  z-index: 2;
+  bottom: -100px
+}
+
+.container_pink {
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  bottom: 39px;
+  right: 138px;
+}
+
+@media screen and (max-width: 576px) {
+  .header_image_wrapper {
+    width: 100%;
+  }
+
+  .overlay_image {
+    bottom: -70px
+  }
+}
+
+
+
